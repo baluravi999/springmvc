@@ -41,7 +41,7 @@ public class LocationController {
         Location loc=service.getLocationById(locId);
         map.addAttribute("loc",loc);
     	return "LocationDataEdit";
-    }
+    }// requst mappping 
     @RequestMapping(value="updateLoc",method=RequestMethod.POST)
     public String updateLoc(@ModelAttribute Location loc){
     	service.updateLocation(loc);
